@@ -31,3 +31,9 @@ Rust crates (about 420 across all platforms) are permissively licensed (MIT, Apa
 ISC, Zlib, BSL-1.0, Unicode-3.0, Unlicense, 0BSD). Where a crate offers a copyleft alternative,
 AniCraft uses it under its permissive licence. Binary releases ship the full licence texts of
 all crates (see docs/legal/compliance.md, "Release checklist").
+
+ICASYS edition
+
+This is a modified version of AniCraft, published by ICASYS (https://icasys.mx).
+It is based on AniCraft by the ArtCraft team and community. The ArtCraft name and logos are not used.
+See ICASYS.md.

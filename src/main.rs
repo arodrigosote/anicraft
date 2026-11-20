@@ -106,7 +106,7 @@ struct Look {
 #[cfg(not(target_arch = "wasm32"))]
 fn run(renderer: eframe::Renderer, file: Option<&Path>, shot: Option<PathBuf>, open: Option<String>, look: Look) -> eframe::Result {
     let options = eframe::NativeOptions {
-        viewport: platform::viewport(egui::ViewportBuilder::default().with_title("AniCraft").with_inner_size([1600.0, 940.0]).with_min_inner_size([960.0, 600.0])),
+        viewport: platform::viewport(egui::ViewportBuilder::default().with_title("ICASYS Animación").with_inner_size([1600.0, 940.0]).with_min_inner_size([960.0, 600.0])),
         renderer,
         ..Default::default()
     };
@@ -134,7 +134,7 @@ fn run(renderer: eframe::Renderer, file: Option<&Path>, shot: Option<PathBuf>, o
             a.open_panel(open.as_deref());
             // An imported document says what came across, as opening it from the menu does.
             if let Some(r) = report {
-                a.status_ok(tr!("{report} Save to keep it as an AniCraft document.", report = r));
+                a.status_ok(tr!("{report} Save to keep it as an ICASYS Animación document.", report = r));
             }
             Ok(Box::new(a))
         }),

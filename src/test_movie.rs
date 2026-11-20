@@ -355,7 +355,7 @@ pub fn show(app: &mut App, ctx: &egui::Context) {
                 // time they pass; the Output's first lines say which and why.
                 if tm.skipped > 0 {
                     let what = trn!("{n} frame script doesn't run", "{n} frame scripts don't run", tm.skipped);
-                    ui.label(text(Type::Caption, what).color(T.error)).on_hover_text(tr!("Kept with the document, but outside the ActionScript 3.0 subset AniCraft runs (or on a timeline that doesn't run scripts). The first Output lines say why; the Actions panel shows each problem in place."));
+                    ui.label(text(Type::Caption, what).color(T.error)).on_hover_text(tr!("Kept with the document, but outside the ActionScript 3.0 subset ICASYS Animación runs (or on a timeline that doesn't run scripts). The first Output lines say why; the Actions panel shows each problem in place."));
                 }
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
                     if ui.add_enabled(n > 0, egui::Button::new(tr!("Clear"))).clicked() {

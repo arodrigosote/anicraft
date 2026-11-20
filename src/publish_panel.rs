@@ -471,7 +471,7 @@ fn options(app: &mut App, ui: &mut egui::Ui, f: PublishFormat) {
             range_row(app, ui, f, p.video.range);
             scale_row(app, ui, f, p.video.scale);
             check(app, ui, f, "audio", p.video.audio, tr!("Include sound"), tr!("The movie's sounds: Opus in WebM, AAC in MP4"));
-            form_note(ui, FORM_LABEL_DIALOG, text(Type::Caption, tr!("End the name in .webm (VP9) or .mp4 (H.264). AniCraft uses the ffmpeg on this computer.")));
+            form_note(ui, FORM_LABEL_DIALOG, text(Type::Caption, tr!("End the name in .webm (VP9) or .mp4 (H.264). ICASYS Animación uses the ffmpeg on this computer.")));
         }
         PublishFormat::Lottie => {
             range_row(app, ui, f, p.lottie.range);

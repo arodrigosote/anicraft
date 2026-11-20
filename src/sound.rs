@@ -200,7 +200,7 @@ fn open(player: &Arc<Mutex<Player>>, failed: &Arc<AtomicBool>) -> Result<(cpal::
         cpal::SampleFormat::I16 => build::<i16>(&device, config, player, failed),
         cpal::SampleFormat::U16 => build::<u16>(&device, config, player, failed),
         cpal::SampleFormat::I32 => build::<i32>(&device, config, player, failed),
-        other => return Err(tr!("the sound device wants {format} samples, which AniCraft doesn't write yet", format = format!("{other:?}"))),
+        other => return Err(tr!("the sound device wants {format} samples, which ICASYS Animación doesn't write yet", format = format!("{other:?}"))),
     }
     .map_err(|e| tr!("could not start sound ({error})", error = e))?;
     stream.play().map_err(|e| tr!("could not start sound ({error})", error = e))?;
@@ -209,7 +209,7 @@ fn open(player: &Arc<Mutex<Player>>, failed: &Arc<AtomicBool>) -> Result<(cpal::
 
 #[cfg(not(sound_output))]
 fn open(_: &Arc<Mutex<Player>>, _: &Arc<AtomicBool>) -> Result<u32, String> {
-    Err(if cfg!(target_arch = "wasm32") { tr!("the web version of AniCraft has no sound output yet").into() } else { tr!("this build of AniCraft has no sound output").into() })
+    Err(if cfg!(target_arch = "wasm32") { tr!("the web version of ICASYS Animación has no sound output yet").into() } else { tr!("this build of ICASYS Animación has no sound output").into() })
 }
 
 /// An output stream whose callback mixes from the player. The lock is held only while one

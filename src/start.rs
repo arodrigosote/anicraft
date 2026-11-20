@@ -91,7 +91,7 @@ fn header(app: &mut App, ui: &mut egui::Ui, ctx: &egui::Context) {
         ui.add(egui::Image::new((crate::app::app_mark(ctx).id(), vec2(44.0, 44.0))));
         ui.add_space(8.0);
         ui.vertical(|ui| {
-            ui.label(text(Type::Title, "AniCraft")); // i18n-exempt: the product name
+            ui.label(text(Type::Title, "ICASYS Animación")); // i18n-exempt: the product name
             ui.label(text(Type::Caption, tr!("Version {version} · {stage}", version = env!("CARGO_PKG_VERSION"), stage = crate::i18n::t(crate::app::RELEASE_STAGE))));
         });
         ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
@@ -169,7 +169,7 @@ fn open_column(app: &mut App, ui: &mut egui::Ui, ctx: &egui::Context) {
     ui.label(text(Type::Heading, tr!("Open")));
     ui.add_space(6.0);
     ui.horizontal(|ui| {
-        if ui.add(egui::Button::new(tr!("Open…")).min_size(vec2(0.0, TARGET))).on_hover_text(tr!("An AniCraft document, or an Animate .fla or .xfl")).clicked() {
+        if ui.add(egui::Button::new(tr!("Open…")).min_size(vec2(0.0, TARGET))).on_hover_text(tr!("An ICASYS Animación document, or an Animate .fla or .xfl")).clicked() {
             app.invoke("file.open");
         }
         if ui.add(egui::Button::new(tr!("Sample animation")).min_size(vec2(0.0, TARGET))).on_hover_text(tr!("A short animation to look at and take apart")).clicked() {
@@ -248,7 +248,7 @@ fn footer(app: &mut App, ui: &mut egui::Ui) {
     ui.separator();
     ui.horizontal(|ui| {
         let mut on = app.prefs.start_screen;
-        if crate::theme::checkbox(ui, &mut on, tr!("Show this screen when AniCraft starts")).changed() {
+        if crate::theme::checkbox(ui, &mut on, tr!("Show this screen when ICASYS Animación starts")).changed() {
             let mut p = app.prefs.clone();
             p.start_screen = on;
             let ctx = ui.ctx().clone();

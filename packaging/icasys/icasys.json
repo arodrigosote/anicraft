@@ -1,0 +1,18 @@
+{
+  "app": "anicraft",
+  "name": "ICASYS Animación",
+  "slug": "animacion",
+  "upstream_name": "AniCraft",
+  "upstream_base": "d0beaf253274948b55ee9e1107749f9491bff880",
+  "owner": "arodrigosote",
+  "es_ui": false,
+  "deb_section": "graphics",
+  "cli": "anicraft-cli",
+  "cli_project_ext": "anicraft",
+  "mcp": {
+    "headless": "mcp --sample",
+    "attach": "",
+    "auth": "none",
+    "project": "anicraft-cli mcp proyecto.anicraft"
+  }
+}

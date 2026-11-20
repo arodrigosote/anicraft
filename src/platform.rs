@@ -271,7 +271,7 @@ pub fn filters(cmd: &str) -> (&'static str, &'static [&'static str]) {
         // Opening also imports .fla archives and .xfl packages.
         "file.open" => (tr_noop!("Documents"), &["anicraft", "fla", "xfl"]),
         "plugin.install" => (tr_noop!("WebAssembly plug-in"), &["wasm"]),
-        _ => (tr_noop!("AniCraft document"), &["anicraft"]),
+        _ => (tr_noop!("ICASYS Animación document"), &["anicraft"]),
     }
 }
 

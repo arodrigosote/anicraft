@@ -5,7 +5,7 @@
   <id>ai.storyteller.anicraft</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT OR Apache-2.0</project_license>
-  <name>AniCraft</name>
+  <name>ICASYS Animación</name>
   <summary>Draw and animate 2D vector art on a timeline</summary>
   <developer id="ai.storyteller">
     <name>ArtCraft Team</name>
@@ -27,9 +27,9 @@
   <launchable type="desktop-id">ai.storyteller.anicraft.desktop</launchable>
   <icon type="stock">ai.storyteller.anicraft</icon>
   <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where release CI validates): no vcs-browser. -->
-  <url type="homepage">https://getartcraft.com/apps/anicraft</url>
-  <url type="bugtracker">https://github.com/storytold/AniCraft/issues</url>
-  <url type="help">https://github.com/storytold/AniCraft</url>
+  <url type="homepage">https://icasys.mx</url>
+  <url type="bugtracker">https://github.com/arodrigosote/AniCraft/issues</url>
+  <url type="help">https://github.com/arodrigosote/AniCraft</url>
   <categories>
     <category>Graphics</category>
     <category>2DGraphics</category>
@@ -45,7 +45,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>The sample animation on the stage, with tweens on the timeline and the easing curve in Properties</caption>
-      <image>https://raw.githubusercontent.com/storytold/AniCraft/main/docs/images/shot-1-stage.png</image>
+      <image>https://raw.githubusercontent.com/arodrigosote/AniCraft/main/docs/images/shot-1-stage.png</image>
     </screenshot>
   </screenshots>
   <branding>

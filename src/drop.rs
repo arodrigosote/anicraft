@@ -69,7 +69,7 @@ pub struct Plan {
 /// Why a file can't go there, in the interface language.
 fn refusal(kind: DropKind, to: DropTarget, start: bool) -> String {
     match kind {
-        DropKind::Unsupported => tr!("AniCraft opens .anicraft, .fla and .xfl documents, and imports SVG drawings, PNG and JPEG images, and WAV, Ogg and MP3 sounds").into(),
+        DropKind::Unsupported => tr!("ICASYS Animación opens .anicraft, .fla and .xfl documents, and imports SVG drawings, PNG and JPEG images, and WAV, Ogg and MP3 sounds").into(),
         _ if start => tr!("Open or create a document first, then drop drawings, images and sounds on its stage").into(),
         DropKind::Drawing if to == DropTarget::Library => tr!("SVG drawings import to the stage: drop it there").into(),
         _ => tr!("Drop drawings, images and sounds on the stage to place them, or on the Library to add them").into(),
@@ -83,7 +83,7 @@ pub fn plan(files: &[PathBuf], spot: Spot) -> Plan {
     if let Some(doc) = files.iter().find(|f| kind_of(f) == DropKind::Document) {
         out.open = Some(doc.clone());
         for f in files.iter().filter(|f| *f != doc) {
-            out.left_out.push((f.clone(), tr!("AniCraft opens one document at a time; drop the others on their own").into()));
+            out.left_out.push((f.clone(), tr!("ICASYS Animación opens one document at a time; drop the others on their own").into()));
         }
         return out;
     }

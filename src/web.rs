@@ -71,7 +71,7 @@ pub fn start() {
                 web_sys::console::error_1(&JsValue::from_str(&e));
                 if let Some(el) = element(LOADING_ID) {
                     // i18n-exempt: the page's own loading text, before the interface (and its language) starts
-                    el.set_text_content(Some(&format!("AniCraft could not start in this browser: {e}")));
+                    el.set_text_content(Some(&format!("ICASYS Animación could not start in this browser: {e}")));
                 }
             }
         }
@@ -80,7 +80,7 @@ pub fn start() {
 
 async fn run() -> Result<(), String> {
     // i18n-exempt: for the console and the page's loading text, before the interface starts
-    let canvas = element(CANVAS_ID).ok_or("the page has no canvas for AniCraft")?.dyn_into::<web_sys::HtmlCanvasElement>().map_err(|_| "the AniCraft element is not a canvas")?;
+    let canvas = element(CANVAS_ID).ok_or("the page has no canvas for ICASYS Animación")?.dyn_into::<web_sys::HtmlCanvasElement>().map_err(|_| "the ICASYS Animación element is not a canvas")?;
     // Text needs a face to lay out with, and a page can't see the computer's fonts.
     anicraft_engine::text::Fonts::register(fonts());
     let session = anicraft_engine::Session::new(anicraft_engine::doc::sample::demo());

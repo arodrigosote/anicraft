@@ -244,7 +244,7 @@ pub fn tick(app: &mut App, ctx: &egui::Context) {
             }
             Outcome::Failed { error, .. } => {
                 if !app.recovery.failed {
-                    app.status_err(tr!("Autosave failed: {error}. Save your work to be safe; AniCraft will keep trying.", error = error));
+                    app.status_err(tr!("Autosave failed: {error}. Save your work to be safe; ICASYS Animación will keep trying.", error = error));
                 }
                 app.recovery.failed = true;
                 app.recovery.written = None;
@@ -355,8 +355,8 @@ pub fn window(app: &mut App, ctx: &egui::Context) {
         .show(ctx, |ui| {
             ui.set_width(520.0);
             let lead = trn!(
-                "AniCraft didn't close properly last time. This document had changes that weren't saved:",
-                "AniCraft didn't close properly last time. These documents had changes that weren't saved:",
+                "ICASYS Animación didn't close properly last time. This document had changes that weren't saved:",
+                "ICASYS Animación didn't close properly last time. These documents had changes that weren't saved:",
                 n
             );
             ui.label(text(Type::Body, lead).color(T.text_dim));

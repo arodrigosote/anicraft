@@ -7,9 +7,9 @@
   <key>CFBundleDevelopmentRegion</key>
   <string>en</string>
   <key>CFBundleDisplayName</key>
-  <string>AniCraft</string>
+  <string>ICASYS Animación</string>
   <key>CFBundleName</key>
-  <string>AniCraft</string>
+  <string>ICASYS Animación</string>
   <key>CFBundleExecutable</key>
   <string>AniCraft</string>
   <key>CFBundleIdentifier</key>
@@ -52,7 +52,7 @@
       <key>UTTypeIdentifier</key>
       <string>ai.storyteller.anicraft.document</string>
       <key>UTTypeDescription</key>
-      <string>AniCraft Document</string>
+      <string>ICASYS Animación Document</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -105,7 +105,7 @@
   <array>
     <dict>
       <key>CFBundleTypeName</key>
-      <string>AniCraft Document</string>
+      <string>ICASYS Animación Document</string>
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>LSHandlerRank</key>

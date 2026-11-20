@@ -75,7 +75,7 @@ fn windows_icon() {
         return;
     }
     let mut res = winresource::WindowsResource::new();
-    res.set_icon("assets/app-icon/anicraft.ico").set("ProductName", "AniCraft").set("FileDescription", "AniCraft 2D vector animation studio");
+    res.set_icon("assets/app-icon/anicraft.ico").set("ProductName", "ICASYS Animación").set("FileDescription", "ICASYS Animación");
     if let Err(e) = res.compile() {
         if required("ANICRAFT_REQUIRE_WINRES") {
             fail(&format!("ANICRAFT_REQUIRE_WINRES=1 but anicraft.exe's icon and version resource could not be embedded: {e}"));

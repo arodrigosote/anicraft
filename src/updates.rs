@@ -4,7 +4,7 @@ use craft_update::{App, Http, Paths, Platform, Release, Stop, self_update};
 use std::sync::mpsc::{Receiver, TryRecvError, channel};
 
 // i18n-exempt: stable release identity, not interface text.
-pub const APP: App = App::new("anicraft", "AniCraft", "Animation", "storytold/anicraft");
+pub const APP: App = App::new("anicraft", "ICASYS Animación", "Animation", "arodrigosote/anicraft");
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 /// A pinned, nightly, or unknown launcher choice must never be replaced by a stable update.
@@ -12,7 +12,7 @@ fn stable_choice() -> Result<(), String> {
     if Pins::load_default().choice(APP.id) == Choice::Stable {
         Ok(())
     } else {
-        Err(tr!("ArtCraft Launcher manages this app's version. Change its version there.").into())
+        Err(tr!("ICASYS Lanzador manages this app's version. Change its version there.").into())
     }
 }
 
@@ -66,7 +66,7 @@ impl Updates {
         self.check_using(ctx, || {
             let result = stable_choice()
                 .and_then(|()| Http::new(concat!("AniCraft/", env!("CARGO_PKG_VERSION"))))
-                .and_then(|http| craft_update::check_for_update(&APP, &http, VERSION));
+                .and_then(|http| { let _ = (&APP, &http, VERSION,); ::std::result::Result::<::std::option::Option<::craft_update::Release>, ::std::string::String>::Err(::std::string::String::from("ICASYS apps are updated by ICASYS: https://icasys.mx / Las apps de ICASYS se actualizan desde ICASYS: https://icasys.mx")) });
             let installable = result
                 .as_ref()
                 .ok()
@@ -194,7 +194,7 @@ impl Updates {
                 .default_width(440.0)
                 .max_width((ctx.content_rect().width() - 32.0).max(160.0))
                 .show(ctx, |ui| {
-                    ui.label(tr!("AniCraft {version}", version = VERSION));
+                    ui.label(tr!("ICASYS Animación {version}", version = VERSION));
                     ui.label(&self.message);
                     if !safe_to_install && self.release.is_some() {
                         ui.label(tr!("Save your work and stop running tasks before installing an update."));

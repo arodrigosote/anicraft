@@ -14,7 +14,7 @@ section: graphics
 priority: optional
 maintainer: ${ANICRAFT_MAINTAINER}
 vendor: ArtCraft Team
-homepage: https://getartcraft.com/apps/anicraft
+homepage: https://icasys.mx
 license: MIT OR Apache-2.0
 description: |-
   Open-source, native 2D animation studio.

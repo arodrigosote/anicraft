@@ -441,7 +441,7 @@ fn script_view(app: &mut App, ui: &mut egui::Ui, t: &FrameTarget, src: Option<&S
             ui.label(text(Type::Caption, tr!("Kept with the document as written. ActionScript 3.0 that controls the timeline runs in Test Movie and the HTML canvas export.")));
         }
         Some(false) => {
-            ui.label(text(Type::Caption, tr!("A script runs only when all of it is in the ActionScript 3.0 subset AniCraft runs: timeline control (stop, play, go to a frame or label), mouse listeners, trace, and setting x, y, alpha, visible, rotation and scale on named instances. Until then it is kept as written and doesn't run.")));
+            ui.label(text(Type::Caption, tr!("A script runs only when all of it is in the ActionScript 3.0 subset ICASYS Animación runs: timeline control (stop, play, go to a frame or label), mouse listeners, trace, and setting x, y, alpha, visible, rotation and scale on named instances. Until then it is kept as written and doesn't run.")));
         }
         Some(true) => {}
     }

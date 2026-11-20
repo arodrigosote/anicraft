@@ -339,7 +339,7 @@ fn manager(app: &mut App, ctx: &egui::Context) {
                 action = Some(("show", f.display().to_string()));
             }
         });
-        ui.label(text(Type::Caption, tr!("Plug-ins run sandboxed: they can change the open document through AniCraft's commands, never your files.")));
+        ui.label(text(Type::Caption, tr!("Plug-ins run sandboxed: they can change the open document through ICASYS Animación's commands, never your files.")));
     });
     a11y::name_title_bar(&shown, title);
     app.show_plugins = open;

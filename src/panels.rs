@@ -208,7 +208,7 @@ pub fn status_bar(app: &mut App, ui: &mut egui::Ui) {
             ui.label(small(tr!("undo {steps} · {size} MB", steps = app.s.history().undo_len(), size = format!("{:.1}", app.s.history().bytes() as f32 / (1024.0 * 1024.0)))));
             ui.add_space(12.0);
             if let Some(a) = crate::autosave::status(app, now) {
-                ui.label(small(a)).on_hover_text(tr!("A recovery copy of your unsaved work. If AniCraft closes unexpectedly, the next start offers it back."));
+                ui.label(small(a)).on_hover_text(tr!("A recovery copy of your unsaved work. If ICASYS Animación closes unexpectedly, the next start offers it back."));
                 ui.add_space(12.0);
             }
             if wide {

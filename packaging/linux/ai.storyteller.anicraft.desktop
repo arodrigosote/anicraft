@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=AniCraft
+Name=ICASYS Animación
 GenericName=Animation Studio
 Comment=Draw and animate 2D vector art on a timeline
 Exec=anicraft %f
